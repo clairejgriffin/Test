@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800|Work+Sans:100,200,300,400,500,600,700,800,900');
+
+/*----------------------------------------------------------------Special paddings/margins/text*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: Work+Sans, sans-serif;
+    font-weight: 500;
+    color: #2d8d91;
+}
+
+/*-------------------------------------------------------------------Heading*/
+
+header {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Work+Sans, sans-serif;
+    ;
+    color: #2d8d91;
+    background-color: rgba(210, 224, 238, 0.822);
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #2d8d91;
+}
+
+#logo {
+    float: left;
+    font-size: 300%;
+    margin-left: 30px;
+}
+
+#menu {
+    font-size: 120%;
+    list-style-type: none;
+    letter-spacing: 2px;
+    float: right;
+}
+
+#logo,
+#menu {
+    line-height: 50px;
+}
+
+#menu li {
+    float: left;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #dd6f82;
+}
+
+.active {
+    border-bottom: 1px solid #dd6f82;
+}
+
+/*---------------------------------------------------------------Glasgow Image*/
+
+#glasgow-image {
+    height: 600px;
+    width: cover;
+    background: url("../images/Glasgow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 360px;
+    transition: all .5 ease-in-out;
+    -moz-transition: all .5 ease-in-out;
+    -webkit-transition: all .5 ease-in-out;
+
+    animation-name: glasgow-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: fowards;
+}
+
+#glasgow-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes glasgow-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+#cover-text,
+#cover-text h2 {
+    color: #c41e15;
+}
+
+#cover-text {
+    font-size: 110%;
+    font-family: Work+Sans;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    width: 100%;
+    height: 150px;
+
+    padding-top: 30px;
+    padding-left: 10px;
+
+    background-color: rgba(105, 241, 230, 0.7);
+
+    bottom: 50px;
+    left: 700px;
+
+    position: absolute;
+}
+
+/*----------------------------------------------------------------Footer*/
+
+footer {
+    min-height: 120px;
+    margin: 0;
+}
